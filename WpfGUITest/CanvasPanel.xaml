@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfGUITest.CanvasPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGUITest"
+        mc:Ignorable="d"
+        Title="CanvasPanel" Height="300" Width="300">
+    <Canvas>
+        <Rectangle Canvas.Left="40" Canvas.Top="31" Width="63" Height="41" Fill="Blue"  />
+        <Ellipse Canvas.Left="130" Canvas.Top="79" Width="58" Height="58" Fill="Blue"  />
+        <Path Canvas.Left="61" Canvas.Top="28" Width="133" Height="98" Fill="Blue" 
+          Stretch="Fill" Data="M61,125 L193,28"/>
+    </Canvas>
+</Window>

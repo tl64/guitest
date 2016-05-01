@@ -1,0 +1,8 @@
+﻿<Application x:Class="WpfGUITest.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfGUITest">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
