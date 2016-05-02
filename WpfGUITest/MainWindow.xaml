@@ -7,53 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
     <Window.Resources>
-        <Style TargetType="Grid" x:Key="menuContainer">
-            <Setter Property="Width" Value="Auto"/>
-            <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="Background" Value="#F5F5F5" />
-        </Style>
-        <Style TargetType="Button" x:Key="menuItems">
-            <Setter Property="Height" Value="50"/>
-            <Setter Property="Width" Value="100"/>
-            <Setter Property="Margin" Value="1 0 0 0" />
-            <Setter Property="Background" Value="#E3E3E3" />
-            <Setter Property="Foreground" Value="#4A4A4A" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="Button.IsMouseOver" Value="True">
-                    <!--<Setter Property="Button.Background" Value="#357CAB" />
-                    <Setter Property="Button.Foreground" Value="#D1D1D1" />-->
-                    <Trigger.EnterActions>
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <ColorAnimation From="#E3E3E3" To="#357CAB" Duration="0:0:0.200" Storyboard.TargetProperty="Background.Color" />
-                                <ColorAnimation From="#4A4A4A" To="#D1D1D1" Duration="0:0:0.200" Storyboard.TargetProperty="Foreground.Color" />
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </Trigger.EnterActions>
-                    <Trigger.ExitActions>
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <ColorAnimation To="#E3E3E3" From="#357CAB" Duration="0:0:0.200" Storyboard.TargetProperty="Background.Color" />
-                                <ColorAnimation To="#4A4A4A" From="#D1D1D1" Duration="0:0:0.200" Storyboard.TargetProperty="Foreground.Color" />
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </Trigger.ExitActions>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-        <Style TargetType="Button" x:Key="menuItemFirst" BasedOn="{StaticResource menuItems}">
-            <Setter Property="Margin" Value="0 0 0 0"/>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StyleResources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <DockPanel LastChildFill="True">
         <Border BorderThickness="0,0,0,1" BorderBrush="#E0E0E0" DockPanel.Dock="Top">
@@ -75,7 +33,6 @@
                         <Button Content="Button 5" Style="{StaticResource menuItems}" Grid.Row="0" Grid.Column="5"/>
                     </WrapPanel>
                 </Border>
-
             </Grid>
         </Border>
         <Grid>
