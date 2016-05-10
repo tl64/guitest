@@ -56,7 +56,8 @@
                           ScrollViewer.HorizontalScrollBarVisibility="Auto"
                           ScrollViewer.VerticalScrollBarVisibility="Auto">
                 <DockPanel>
-                    <TextBlock Text="This is RIGHT column" DockPanel.Dock="Left"/>
+                    <Button DockPanel.Dock="Left" Margin="10" Width="150" Height="100"
+                            Content="Ellipse Button" Template="{StaticResource EllipseButtonTemplate}" />
                 </DockPanel>
             </ScrollViewer>
            
