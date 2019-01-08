@@ -19,10 +19,10 @@ namespace WpfGUITest
 
             //StackPanel mainWindow = new StackPanel();
             //DockPanel mainWindow = new DockPanel();
-            //WrapPanel mainWindow = new WrapPanel();
+            WrapPanel mainWindow = new WrapPanel();
             //GridPanel mainWindow = new GridPanel();
             //CanvasPanel mainWindow = new CanvasPanel();
-            MainWindow mainWindow = new MainWindow();
+            //MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
         }
     }
